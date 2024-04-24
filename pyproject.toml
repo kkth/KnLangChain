@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "com-kun"
+version = "0.1.0"
+description = ""
+authors = ["kkth <hekun_golf@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "com", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain-openai = "^0.0.8"
+langchain-text-splitters = "^0.0.1"
+langchain-community = "^0.0.28"
+pymilvus = "^2.3.7"
+pgvecto-rs = "^0.1.4"
+psycopg = "^3.1.18"
+psycopg2 = "^2.9.9"
+pgvector = "^0.2.5"
+celery = "^5.3.6"
+redis = "^5.0.3"
+pydantic-settings = "^2.2.1"
+xmltodict = "^0.13.0"
+singlestoredb = "^1.0.2"
+wikipedia = "^1.4.0"
+rank-bm25 = "^0.2.2"
+openai = "^1.17.0"
+fastapi = "^0.110.2"
+uvicorn = "^0.29.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+priority = "primary"
